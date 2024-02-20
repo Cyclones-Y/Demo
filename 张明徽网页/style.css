@@ -1,0 +1,72 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* 从左边开始排列 */
+    align-items: flex-start; /* 确保每行卡片的顶部对齐 */
+}
+
+.card {
+    margin: 10px;
+    flex: 0 0 auto; /* 关闭flex-grow, flex-shrink 和 flex-basis的简写 */
+    width: calc((100% / 5) - 20px); /* 计算每个卡片的宽度 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* ...其他样式... */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* 设置一个固定的高度 */
+    object-fit: cover; /* 确保图片覆盖整个区域，同时保持比例 */
+    border-bottom: 1px solid #ddd; /* 可选，为图片底部添加边框 */
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 18px;
+    height: 48px; /* 设置标题区域的固定高度 */
+    overflow: hidden; /* 超出部分隐藏 */
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* 确保链接填充整个标题区域 */
+    white-space: nowrap; /* 不换行 */
+    overflow: hidden; /* 超出部分隐藏 */
+    text-overflow: ellipsis; /* 显示省略号 */
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    height: 60px; /* 设置描述区域的固定高度 */
+    overflow: hidden; /* 超出部分隐藏 */
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 0 0 calc(25% - 20px); /* 屏幕较小时，每行4个卡片 */
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex: 0 0 calc(33.33% - 20px); /* 屏幕更小时，每行3个卡片 */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 0 0 calc(50% - 20px); /* 在较小屏幕上每行显示2个卡片 */
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        flex: 0 0 100%; /* 在手机屏幕上每行显示1个卡片 */
+    }
+}
