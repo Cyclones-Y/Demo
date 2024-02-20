@@ -3,7 +3,7 @@ import requests
 import time
 from tqdm import tqdm
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='sk-ajkpR')
 
 response = client.images.generate(
     model="dall-e-3",
