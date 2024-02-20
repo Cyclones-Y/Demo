@@ -1,8 +1,8 @@
 import requests
 import json
 
-API_KEY = "4TfvNm8dtvTsAHjsWzd2eTxM"
-SECRET_KEY = "Z1aGAodg4AadcGTHdTtrohhFFVVm3u1P"
+API_KEY = "4AHjsWzd2eTxM"
+SECRET_KEY = "Z1a1P"
 
 
 def main():

@@ -2,7 +2,7 @@ from openai import OpenAI
 import re
 import requests
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='sk-Nlcg')
 
 response = client.chat.completions.create(
     model="gpt-4-1106-preview",

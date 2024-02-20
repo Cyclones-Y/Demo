@@ -4,7 +4,7 @@ import re
 import requests
 
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='sk-ajklwJPnOypR')
 
 response = client.chat.completions.create(
     model="gpt-4",

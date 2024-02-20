@@ -5,8 +5,8 @@ import base64
 import urllib
 import gradio as gr
 
-API_KEY = "pS3lR7H24aWefWhyt4MZ4yHm"
-SECRET_KEY = "Xc9dHDUg4EiENWDEK9U6GcAlxrZX11De"
+API_KEY = "pSm"
+SECRET_KEY = "XUe"
 
 
 # 获取PDF task_id
